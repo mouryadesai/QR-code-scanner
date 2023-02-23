@@ -1,5 +1,9 @@
 # QR-code-scanner
 
+This is a Python code for a QR code scanner using 'OpenCV' and 'PyZbar' libraries.
+
+The program opens the camera and captures frames continuously, decodes any QR codes in the frame, draws a rectangle around the code, and opens the URL in a web browser.
+
 The program uses the ''cv2.VideoCapture()'' function to open the default camera, and then runs a while loop to continuously read frames from the camera using the "cap.read()" method.
 
 The "decode()" function from the PyZbar library is used to decode any QR codes in the frame. If a QR code is detected, the program extracts the URL from the code using the "obj.data" property, and then draws a green rectangle around the code using the "cv2.rectangle()" method.
